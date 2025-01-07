@@ -50,7 +50,7 @@ Install the required libraries using pip:  <!-- Install the required libraries u
 
 #### Search for a Single Email  <!-- #### Search for a Single Email -->
 
-##### - `python credential_searcher.py --email example@example.com --search-platform hibp --hibp-api-key YOUR_HIBP_API_KEY  <!-- python credential_searcher.py --email example@example.com --search-platform hibp --hibp-api-key YOUR_HIBP_API_KEY``
+##### - python credential_searcher.py --email example@example.com --search-platform hibp --hibp-api-key YOUR_HIBP_API_KEY  <!-- python credential_searcher.py --email example@example.com --search-platform hibp --hibp-api-key YOUR_HIBP_API_KEY
 
 #### Search for Emails from a File on LeakCheck  <!-- #### Search for Emails from a File on LeakCheck
 
