@@ -1,10 +1,9 @@
-# Credential Searcher  <!-- # Credential Searcher -->
+# Credential Searcher 
 
 Credential Searcher is a Python script that searches for breached credentials across multiple platforms, including Dehashed, Have I Been Pwned (HIBP), and LeakCheck. The script can query these platforms using email addresses or domain names and provides a user-friendly interface with options to save the results to a file.  <!-- Credential Searcher is a Python script that searches for breached credentials across multiple platforms, including Dehashed, Have I Been Pwned (HIBP), and LeakCheck. The script can query these platforms using email addresses or domain names and provides a user-friendly interface with options to save the results to a file. -->
 
-## Features  <!-- ## Features -->
-
-- **Search for leaked credentials on:**  <!-- - **Search for leaked credentials on:** -->
+## Features 
+- **Search for leaked credentials on:**
   - Dehashed  <!-- - Dehashed -->
   - Have I Been Pwned  <!-- - Have I Been Pwned -->
   - LeakCheck  <!-- - LeakCheck -->
@@ -50,7 +49,7 @@ Install the required libraries using pip:  <!-- Install the required libraries u
 
 ### Search for a Single Email 
 
-#####  python credential_searcher.py --email example@example.com --search-platform hibp --hibp-api-key YOUR_HIBP_API_KEY  <!-- python credential_searcher.py --email example@example.com --search-platform hibp --hibp-api-key YOUR_HIBP_API_KEY
+> **python credential_searcher.py --email example@example.com --search-platform hibp --hibp-api-key YOUR_HIBP_API_KEY  <!-- python credential_searcher.py --email example@example.com --search-platform hibp --hibp-api-key YOUR_HIBP_API_KEY**
 
 ### Search for Emails from a File on LeakCheck  <!-- #### Search for Emails from a File on LeakCheck
 
