@@ -16,17 +16,17 @@ This script uses the assetfinder tool to discover subdomains for a given domain,
 
 ## Requirements
 
-Prerequisites:
+#### Prerequisites:
 
-Python 3.7+
+- Python 3.7+
 
-Assetfinder: Installable via Go:
+- Assetfinder: Installable via Go:
 
-go install github.com/tomnomnom/assetfinder@latest
+- - go install github.com/tomnomnom/assetfinder@latest
 
-Python Libraries: Install the required Python packages:
+- Python Libraries: Install the required Python packages:
 
-pip install requests termcolor
+- - pip install requests termcolor
 
 ## Usage
 
