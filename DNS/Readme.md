@@ -1,20 +1,20 @@
 # Subdomain Finder & Web Service Checker
 
-Description
+## Description
 
 This script uses the assetfinder tool to discover subdomains for a given domain, validates which subdomains are live, and identifies those with active web services. Results are saved into organized output files for easy reference.
 
-Key Features:
+## Key Features:
 
-Subdomain Discovery: Enumerates subdomains using the powerful assetfinder tool.
+> - Subdomain Discovery: Enumerates subdomains using the powerful assetfinder tool.
 
-Live Subdomain Validation: Checks if discovered subdomains are live by attempting to resolve them.
+> - Live Subdomain Validation: Checks if discovered subdomains are live by attempting to resolve them.
 
-Web Service Detection: Tests live subdomains for active HTTP/HTTPS services.
+> - Web Service Detection: Tests live subdomains for active HTTP/HTTPS services.
 
-Organized Output: Results are saved into separate files for all subdomains, live subdomains, and subdomains with active web services.
+> - Organized Output: Results are saved into separate files for all subdomains, live subdomains, and subdomains with active web services.
 
-Requirements
+## Requirements
 
 Prerequisites:
 
