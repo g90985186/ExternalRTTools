@@ -14,19 +14,19 @@ Credential Searcher is a Python script that searches for breached credentials ac
 - **Save results to a file for further analysis.**  <!-- - **Save results to a file for further analysis.** -->
 - **Handle rate limits and API-specific requirements gracefully.**  <!-- - **Handle rate limits and API-specific requirements gracefully.** -->
 
-## Prerequisites  <!-- ## Prerequisites -->
+## Prerequisites  
 
-### Dependencies  <!-- ### Dependencies -->
+### Dependencies 
 
-- **Python 3.7+**  <!-- - **Python 3.7+** -->
-- **Required Python libraries:**  <!-- - **Required Python libraries:** -->
-  ##### pip install requests colorama  <!-- pip install requests colorama -->
+- **Python 3.7+** 
+- **Required Python libraries:** 
+  ##### pip install requests colorama  
 
-## Installation  <!-- ## Installation -->
+## Installation 
 
-Install the required libraries using pip:  <!-- Install the required libraries using pip: -->
+Install the required libraries using pip: 
 
-##### pip install requests colorama  <!-- pip install requests colorama -->
+##### pip install requests colorama 
 
 
 ## Usage
@@ -51,21 +51,20 @@ Install the required libraries using pip:  <!-- Install the required libraries u
 
 > **python credential_searcher.py --email example@example.com --search-platform hibp --hibp-api-key YOUR_HIBP_API_KEY  <!-- python credential_searcher.py --email example@example.com --search-platform hibp --hibp-api-key YOUR_HIBP_API_KEY**
 
-### Search for Emails from a File on LeakCheck  <!-- #### Search for Emails from a File on LeakCheck
+### Search for Emails from a File on LeakCheck 
 
-##### python credential_searcher.py --email-file emails.txt --search-platform leakcheck --leakcheck-api-key YOUR_LEAKCHECK_API_KEY  <!-- python credential_searcher.py --email-file emails.txt --search-platform leakcheck --leakcheck-api-key YOUR_LEAKCHECK_API_KEY
-
-
-### Search for a Domain on Dehashed  <!-- #### Search for a Domain on Dehashed -->
+> **python credential_searcher.py --email-file emails.txt --search-platform leakcheck --leakcheck-api-key YOUR_LEAKCHECK_API_KEY  <!-- python credential_searcher.py --email-file emails.txt --search-platform leakcheck --leakcheck-api-key YOUR_LEAKCHECK_API_KEY**
 
 
-##### python credential_searcher.py --domain example.com --search-platform dehashed --username YOUR_EMAIL --dehashed-api-key YOUR_DEHASHED_API_KEY  <!-- python credential_searcher.py --domain example.com --search-platform dehashed --username YOUR_EMAIL --dehashed-api-key YOUR_DEHASHED_API_KEY
+### Search for a Domain on Dehashed 
+
+> **python credential_searcher.py --domain example.com --search-platform dehashed --username YOUR_EMAIL --dehashed-api-key YOUR_DEHASHED_API_KEY  <!-- python credential_searcher.py --domain example.com --search-platform dehashed --username YOUR_EMAIL --dehashed-api-key YOUR_DEHASHED_API_KEY**
 
 
-### Save Results to a File  <!-- #### Save Results to a File -->
+### Save Results to a File  
 
 
-##### python credential_searcher.py --email example@example.com --output results.txt --search-platform all --hibp-api-key YOUR_HIBP_API_KEY --dehashed-api-key YOUR_DEHASHED_API_KEY --leakcheck-api-key YOUR_LEAKCHECK_API_KEY  <!-- python credential_searcher.py --email example@example.com --output results.txt --search-platform all --hibp-api-key YOUR_HIBP_API_KEY --dehashed-api-key YOUR_DEHASHED_API_KEY --leakcheck-api-key YOUR_LEAKCHECK_API_KEY
+> **python credential_searcher.py --email example@example.com --output results.txt --search-platform all --hibp-api-key YOUR_HIBP_API_KEY --dehashed-api-key YOUR_DEHASHED_API_KEY --leakcheck-api-key YOUR_LEAKCHECK_API_KEY  <!-- python credential_searcher.py --email example@example.com --output results.txt --search-platform all --hibp-api-key YOUR_HIBP_API_KEY --dehashed-api-key YOUR_DEHASHED_API_KEY --leakcheck-api-key YOUR_LEAKCHECK_API_KEY**
 
 
 ## API Key Setup 
