@@ -1,6 +1,6 @@
 # Subdomain Finder & Web Service Checker  <!-- # Subdomain Finder & Web Service Checker -->
 
-## Description  <!-- ## Description -->
+## Description 
 
 This script uses the `assetfinder` tool to discover subdomains for a given domain, validates which subdomains are live, and identifies those with active web services. Results are saved into organized output files for easy reference.  <!-- This script uses the `assetfinder` tool to discover subdomains for a given domain, validates which subdomains are live, and identifies those with active web services. Results are saved into organized output files for easy reference. -->
 
@@ -17,13 +17,13 @@ This script uses the `assetfinder` tool to discover subdomains for a given domai
 
 - **Python 3.7+**  <!-- - **Python 3.7+** -->
 - **Assetfinder**: Installable via Go:  <!-- - **Assetfinder**: Installable via Go: -->
-  ```sh  <!-- ```sh -->
+ 
   go install github.com/tomnomnom/assetfinder@latest  <!-- go install github.com/tomnomnom/assetfinder@latest -->
-  ```  <!-- ``` -->
+ 
 - **Python Libraries**: Install the required Python packages:  <!-- - **Python Libraries**: Install the required Python packages: -->
-  ```sh  <!-- ```sh -->
+  
   pip install requests termcolor  <!-- pip install requests termcolor -->
-  ```  <!-- ``` -->
+ 
 
 ## Usage  <!-- ## Usage -->
 
@@ -37,9 +37,9 @@ This script uses the `assetfinder` tool to discover subdomains for a given domai
 
 ### Example Command  <!-- ### Example Command -->
 
-```sh  <!-- ```sh -->
+
 python subdomain_web_checker.py -d example.com -o all_subdomains.txt -l live_subdomains.txt -w web_services.txt -t 15  <!-- python subdomain_web_checker.py -d example.com -o all_subdomains.txt -l live_subdomains.txt -w web_services.txt -t 15 -->
-```  <!-- ``` -->
+
 
 ### Output Files  <!-- ### Output Files -->
 
@@ -69,30 +69,30 @@ python subdomain_web_checker.py -d example.com -o all_subdomains.txt -l live_sub
 
 **Command:**  <!-- **Command:** -->
 
-```sh  <!-- ```sh -->
+
 python subdomain_web_checker.py -d example.com -o all_subdomains.txt -l live_subdomains.txt -w web_services.txt -t 15  <!-- python subdomain_web_checker.py -d example.com -o all_subdomains.txt -l live_subdomains.txt -w web_services.txt -t 15 -->
-```  <!-- ``` -->
+
 
 **Output Files:**  <!-- **Output Files:** -->
 
 - `all_subdomains.txt`:  <!-- - `all_subdomains.txt`: -->
-  ```  <!-- ``` -->
+ 
   sub1.example.com  <!-- sub1.example.com -->
   sub2.example.com  <!-- sub2.example.com -->
   sub3.example.com  <!-- sub3.example.com -->
-  ```  <!-- ``` -->
+ 
 
 - `live_subdomains.txt`:  <!-- - `live_subdomains.txt`: -->
-  ```  <!-- ``` -->
+
   sub1.example.com  <!-- sub1.example.com -->
   sub2.example.com  <!-- sub2.example.com -->
-  ```  <!-- ``` -->
+ 
 
 - `web_services.txt`:  <!-- - `web_services.txt`: -->
-  ```  <!-- ``` -->
+  
   http://sub1.example.com  <!-- http://sub1.example.com -->
   https://sub2.example.com  <!-- https://sub2.example.com -->
-  ```  <!-- ``` -->
+ 
 
 ## Contributing  <!-- ## Contributing -->
 
