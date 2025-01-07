@@ -18,49 +18,49 @@ This script uses the assetfinder tool to discover subdomains for a given domain,
 
 #### Prerequisites:
 
-- Python 3.7+
+- **Python 3.7+**
 
-- Assetfinder: Installable via Go:
+- **Assetfinder**: Installable via Go:
 
 - - go install github.com/tomnomnom/assetfinder@latest
 
-- Python Libraries: Install the required Python packages:
+- **Python Libraries**: Install the required Python packages:
 
 - - pip install requests termcolor
 
 ## Usage
 
-Script Arguments:
+#### Script Arguments:
 
--d, --domain (required): Target domain (e.g., example.com)
+- -d, --domain (required): Target domain (e.g., example.com)
 
--o, --output (required): Output file to save all discovered subdomains.
+- -o, --output (required): Output file to save all discovered subdomains.
 
--l, --live_output (required): Output file to save live subdomains.
+- -l, --live_output (required): Output file to save live subdomains.
 
--w, --web_output (required): Output file to save subdomains with web services.
+- -w, --web_output (required): Output file to save subdomains with web services.
 
--t, --timeout: Timeout for web service check (default: 10 seconds).
+- -t, --timeout: Timeout for web service check (default: 10 seconds).
 
 ### Example Command:
 
-python subdomain_web_checker.py -d example.com -o all_subdomains.txt -l live_subdomains.txt -w web_services.txt -t 15
+- python subdomain_web_checker.py -d example.com -o all_subdomains.txt -l live_subdomains.txt -w web_services.txt -t 15
 
-Output Files
+- Output Files
 
-All Subdomains (-o):
+- All Subdomains (-o):
 
-Contains all subdomains discovered by the assetfinder tool.
+- -  Contains all subdomains discovered by the assetfinder tool.
 
-Live Subdomains (-l):
+- Live Subdomains (-l):
 
-Lists subdomains that are live and resolvable.
+- - Lists subdomains that are live and resolvable.
 
-Subdomains with Web Services (-w):
+- Subdomains with Web Services (-w):
 
-Includes URLs of subdomains with active HTTP/HTTPS services.
+- -Includes URLs of subdomains with active HTTP/HTTPS services.
 
-Script Workflow
+## Script Workflow
 
 Subdomain Discovery:
 
