@@ -28,7 +28,7 @@ Python Libraries: Install the required Python packages:
 
 pip install requests termcolor
 
-Usage
+## Usage
 
 Script Arguments:
 
@@ -42,7 +42,7 @@ Script Arguments:
 
 -t, --timeout: Timeout for web service check (default: 10 seconds).
 
-Example Command:
+### Example Command:
 
 python subdomain_web_checker.py -d example.com -o all_subdomains.txt -l live_subdomains.txt -w web_services.txt -t 15
 
@@ -106,11 +106,11 @@ web_services.txt:
 http://sub1.example.com
 https://sub2.example.com
 
-Contributing
+## Contributing
 
 Feel free to fork this repository and submit pull requests for improvements or new features. Ensure your code adheres to best practices and is thoroughly tested.
 
-License
+## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
