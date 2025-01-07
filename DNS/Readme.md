@@ -1,4 +1,4 @@
-Subdomain Finder & Web Service Checker
+# Subdomain Finder & Web Service Checker
 
 Description
 
