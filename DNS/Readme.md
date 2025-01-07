@@ -1,121 +1,144 @@
-Subdomain Finder & Web Service Checker
+Credential Searcher
 
-Description
+Credential Searcher is a Python script that searches for breached credentials across multiple platforms, including Dehashed, Have I Been Pwned (HIBP), and LeakCheck. The script can query these platforms using email addresses or domain names and provides a user-friendly interface with options to save the results to a file.
 
-This script uses the assetfinder tool to discover subdomains for a given domain, validates which subdomains are live, and identifies those with active web services. Results are saved into organized output files for easy reference.
+Features
 
-Key Features:
+Search for leaked credentials on:
 
-Subdomain Discovery: Enumerates subdomains using the powerful assetfinder tool.
+Dehashed
 
-Live Subdomain Validation: Checks if discovered subdomains are live by attempting to resolve them.
+Have I Been Pwned
 
-Web Service Detection: Tests live subdomains for active HTTP/HTTPS services.
+LeakCheck
 
-Organized Output: Results are saved into separate files for all subdomains, live subdomains, and subdomains with active web services.
+Query using:
 
-Requirements
+Email addresses
 
-Prerequisites:
+Domain names
+
+Email lists from a file
+
+Save results to a file for further analysis.
+
+Handle rate limits and API-specific requirements gracefully.
+
+Prerequisites
+
+Dependencies
 
 Python 3.7+
 
-Assetfinder: Installable via Go:
+Required Python libraries:
 
-go install github.com/tomnomnom/assetfinder@latest
+requests
 
-Python Libraries: Install the required Python packages:
+colorama
 
-pip install requests termcolor
+Installation
+
+Install the required libraries using pip:
+
+pip install requests colorama
 
 Usage
 
-Script Arguments:
+Command-line Arguments
 
--d, --domain (required): Target domain (e.g., example.com)
+Argument
 
--o, --output (required): Output file to save all discovered subdomains.
+Description
 
--l, --live_output (required): Output file to save live subdomains.
+--username
 
--w, --web_output (required): Output file to save subdomains with web services.
+Your Dehashed username (email). Required for Dehashed searches.
 
--t, --timeout: Timeout for web service check (default: 10 seconds).
+--dehashed-api-key
 
-Example Command:
+Your Dehashed API key. Required for Dehashed searches.
 
-python subdomain_web_checker.py -d example.com -o all_subdomains.txt -l live_subdomains.txt -w web_services.txt -t 15
+--hibp-api-key
 
-Output Files
+Your Have I Been Pwned API key. Required for HIBP searches.
 
-All Subdomains (-o):
+--leakcheck-api-key
 
-Contains all subdomains discovered by the assetfinder tool.
+Your LeakCheck API key. Required for LeakCheck searches.
 
-Live Subdomains (-l):
+--domain
 
-Lists subdomains that are live and resolvable.
+The domain name to search for.
 
-Subdomains with Web Services (-w):
+--email
 
-Includes URLs of subdomains with active HTTP/HTTPS services.
+A single email address to search for.
 
-Script Workflow
+--email-file
 
-Subdomain Discovery:
+Path to a text file containing a list of email addresses to search.
 
-Executes assetfinder to find subdomains.
+-o, --output
 
-Filters results to include only subdomains belonging to the specified domain.
+Path to save the output.
 
-Saves all discovered subdomains to the file specified by -o.
+--search-platform
 
-Live Subdomain Validation:
+Choose the platform to search: dehashed, hibp, leakcheck, both, or all. Default: all.
 
-Checks each subdomain to see if it resolves.
+Examples
 
-Saves live subdomains to the file specified by -l.
+Search for a Single Email
 
-Web Service Detection:
+python credential_searcher.py --email example@example.com --search-platform hibp --hibp-api-key YOUR_HIBP_API_KEY
 
-Tests live subdomains for HTTP/HTTPS services.
+Search for Emails from a File on LeakCheck
 
-Saves subdomains with active web services to the file specified by -w.
+python credential_searcher.py --email-file emails.txt --search-platform leakcheck --leakcheck-api-key YOUR_LEAKCHECK_API_KEY
 
-Example Output
+Search for a Domain on Dehashed
 
-Command:
+python credential_searcher.py --domain example.com --search-platform dehashed --username YOUR_EMAIL --dehashed-api-key YOUR_DEHASHED_API_KEY
 
-python subdomain_web_checker.py -d example.com -o all_subdomains.txt -l live_subdomains.txt -w web_services.txt -t 15
+Save Results to a File
 
-Output Files:
+python credential_searcher.py --email example@example.com --output results.txt --search-platform all --hibp-api-key YOUR_HIBP_API_KEY --dehashed-api-key YOUR_DEHASHED_API_KEY --leakcheck-api-key YOUR_LEAKCHECK_API_KEY
 
-all_subdomains.txt:
+API Key Setup
 
-sub1.example.com
-sub2.example.com
-sub3.example.com
+Dehashed
 
-live_subdomains.txt:
+Sign up at Dehashed.
 
-sub1.example.com
-sub2.example.com
+Obtain your username and API key from the user dashboard.
 
-web_services.txt:
+Have I Been Pwned
 
-http://sub1.example.com
-https://sub2.example.com
+Sign up at HIBP.
 
-Contributing
+Obtain your API key from the user dashboard.
 
-Feel free to fork this repository and submit pull requests for improvements or new features. Ensure your code adheres to best practices and is thoroughly tested.
+LeakCheck
+
+Sign up at LeakCheck.
+
+Obtain your API key from the user dashboard.
+
+Error Handling
+
+401 Unauthorized: Ensure the provided API key is valid and corresponds to the selected platform.
+
+429 Too Many Requests: The script handles rate limits by retrying after a delay. If the issue persists, reduce the query rate.
 
 License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-Disclaimer
+Contributing
 
-This tool is for educational purposes and authorized use only. The author is not responsible for any misuse of this tool.
+Contributions are welcome! Feel free to submit issues or pull requests to enhance the functionality or fix bugs.
 
+Contact
+
+For questions or support, please contact [Your Name or Email].
 
