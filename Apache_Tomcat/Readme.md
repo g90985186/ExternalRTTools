@@ -33,14 +33,14 @@ You can run the script in different ways:  <!-- You can run the script in differ
 To check a single domain, use the `-u` or `--url` option:  <!-- To check a single domain, use the `-u` or `--url` option: -->
 
 
-python check_tomcat.py -u example.com --timeout 10 --results results.txt  <!-- python check_tomcat.py -u example.com --timeout 10 --results results.txt -->
+ > python check_tomcat.py -u example.com --timeout 10 --results results.txt  <!-- python check_tomcat.py -u example.com --timeout 10 --results results.txt -->
 
 
 ### Checking Multiple Domains from a File  <!-- ### Checking Multiple Domains from a File -->
 
 To check multiple domains from a file, use the `-f` or `--file` option:  <!-- To check multiple domains from a file, use the `-f` or `--file` option: -->
 
-python check_tomcat.py -f domains.txt --timeout 10 --results results.txt  <!-- python check_tomcat.py -f domains.txt --timeout 10 --results results.txt -->
+> python check_tomcat.py -f domains.txt --timeout 10 --results results.txt  <!-- python check_tomcat.py -f domains.txt --timeout 10 --results results.txt -->
 
 
 ### Options  <!-- ### Options -->
@@ -56,7 +56,7 @@ python check_tomcat.py -f domains.txt --timeout 10 --results results.txt  <!-- p
 To check a list of domains in `domains.txt` with a timeout of 10 seconds, and save the results to `results.txt`:  <!-- To check a list of domains in `domains.txt` with a timeout of 10 seconds, and save the results to `results.txt`: -->
 
 
-python check_tomcat.py -f domains.txt --timeout 10 --results results.txt  <!-- python check_tomcat.py -f domains.txt --timeout 10 --results results.txt -->
+> python check_tomcat.py -f domains.txt --timeout 10 --results results.txt  <!-- python check_tomcat.py -f domains.txt --timeout 10 --results results.txt -->
 
 
 ## Script Details  <!-- ## Script Details -->
