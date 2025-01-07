@@ -30,9 +30,9 @@ Install the required libraries using pip:  <!-- Install the required libraries u
 ##### pip install requests colorama  <!-- pip install requests colorama -->
 
 
-## Usage  <!-- ## Usage -->
+## Usage
 
-### Command-line Arguments  <!-- ### Command-line Arguments -->
+### Command-line Arguments
 
 | Argument               | Description                                                                 |  <!-- | Argument               | Description                                                                 | -->
 |------------------------|-----------------------------------------------------------------------------|  <!-- |------------------------|-----------------------------------------------------------------------------| -->
@@ -46,59 +46,59 @@ Install the required libraries using pip:  <!-- Install the required libraries u
 | `-o, --output`         | Path to save the output.                                                    |  <!-- | `-o, --output`         | Path to save the output.                                                    | -->
 | `--search-platform`    | Choose the platform to search: dehashed, hibp, leakcheck, both, or all. Default: all. |  <!-- | `--search-platform`    | Choose the platform to search: dehashed, hibp, leakcheck, both, or all. Default: all. | -->
 
-### Examples  <!-- ### Examples -->
+## Examples 
 
-#### Search for a Single Email  <!-- #### Search for a Single Email -->
+### Search for a Single Email 
 
-##### - python credential_searcher.py --email example@example.com --search-platform hibp --hibp-api-key YOUR_HIBP_API_KEY  <!-- python credential_searcher.py --email example@example.com --search-platform hibp --hibp-api-key YOUR_HIBP_API_KEY
+#####  python credential_searcher.py --email example@example.com --search-platform hibp --hibp-api-key YOUR_HIBP_API_KEY  <!-- python credential_searcher.py --email example@example.com --search-platform hibp --hibp-api-key YOUR_HIBP_API_KEY
 
-#### Search for Emails from a File on LeakCheck  <!-- #### Search for Emails from a File on LeakCheck
+### Search for Emails from a File on LeakCheck  <!-- #### Search for Emails from a File on LeakCheck
 
-##### - `python credential_searcher.py --email-file emails.txt --search-platform leakcheck --leakcheck-api-key YOUR_LEAKCHECK_API_KEY  <!-- python credential_searcher.py --email-file emails.txt --search-platform leakcheck --leakcheck-api-key YOUR_LEAKCHECK_API_KEY`
-
-
-#### Search for a Domain on Dehashed  <!-- #### Search for a Domain on Dehashed -->
+##### python credential_searcher.py --email-file emails.txt --search-platform leakcheck --leakcheck-api-key YOUR_LEAKCHECK_API_KEY  <!-- python credential_searcher.py --email-file emails.txt --search-platform leakcheck --leakcheck-api-key YOUR_LEAKCHECK_API_KEY
 
 
-##### - `python credential_searcher.py --domain example.com --search-platform dehashed --username YOUR_EMAIL --dehashed-api-key YOUR_DEHASHED_API_KEY  <!-- python credential_searcher.py --domain example.com --search-platform dehashed --username YOUR_EMAIL --dehashed-api-key YOUR_DEHASHED_API_KEY`
+### Search for a Domain on Dehashed  <!-- #### Search for a Domain on Dehashed -->
 
 
-#### Save Results to a File  <!-- #### Save Results to a File -->
+##### python credential_searcher.py --domain example.com --search-platform dehashed --username YOUR_EMAIL --dehashed-api-key YOUR_DEHASHED_API_KEY  <!-- python credential_searcher.py --domain example.com --search-platform dehashed --username YOUR_EMAIL --dehashed-api-key YOUR_DEHASHED_API_KEY
 
 
-##### - `python credential_searcher.py --email example@example.com --output results.txt --search-platform all --hibp-api-key YOUR_HIBP_API_KEY --dehashed-api-key YOUR_DEHASHED_API_KEY --leakcheck-api-key YOUR_LEAKCHECK_API_KEY  <!-- python credential_searcher.py --email example@example.com --output results.txt --search-platform all --hibp-api-key YOUR_HIBP_API_KEY --dehashed-api-key YOUR_DEHASHED_API_KEY --leakcheck-api-key YOUR_LEAKCHECK_API_KEY`
+### Save Results to a File  <!-- #### Save Results to a File -->
 
 
-## API Key Setup  <!-- ## API Key Setup -->
+##### python credential_searcher.py --email example@example.com --output results.txt --search-platform all --hibp-api-key YOUR_HIBP_API_KEY --dehashed-api-key YOUR_DEHASHED_API_KEY --leakcheck-api-key YOUR_LEAKCHECK_API_KEY  <!-- python credential_searcher.py --email example@example.com --output results.txt --search-platform all --hibp-api-key YOUR_HIBP_API_KEY --dehashed-api-key YOUR_DEHASHED_API_KEY --leakcheck-api-key YOUR_LEAKCHECK_API_KEY
 
-### Dehashed  <!-- ### Dehashed -->
+
+## API Key Setup 
+
+### Dehashed  
 
 1. Sign up at [Dehashed](https://www.dehashed.com).  <!-- 1. Sign up at [Dehashed](https://www.dehashed.com). -->
 2. Obtain your username and API key from the user dashboard.  <!-- 2. Obtain your username and API key from the user dashboard. -->
 
-### Have I Been Pwned  <!-- ### Have I Been Pwned -->
+### Have I Been Pwned  
 
 1. Sign up at [HIBP](https://haveibeenpwned.com).  <!-- 1. Sign up at [HIBP](https://haveibeenpwned.com). -->
 2. Obtain your API key from the user dashboard.  <!-- 2. Obtain your API key from the user dashboard. -->
 
-### LeakCheck  <!-- ### LeakCheck -->
+### LeakCheck 
 
 1. Sign up at [LeakCheck](https://leakcheck.net).  <!-- 1. Sign up at [LeakCheck](https://leakcheck.net). -->
 2. Obtain your API key from the user dashboard.  <!-- 2. Obtain your API key from the user dashboard. -->
 
-## Error Handling  <!-- ## Error Handling -->
+## Error Handling 
 
 - **401 Unauthorized:** Ensure the provided API key is valid and corresponds to the selected platform.  <!-- - **401 Unauthorized:** Ensure the provided API key is valid and corresponds to the selected platform. -->
 - **429 Too Many Requests:** The script handles rate limits by retrying after a delay. If the issue persists, reduce the query rate.  <!-- - **429 Too Many Requests:** The script handles rate limits by retrying after a delay. If the issue persists, reduce the query rate. -->
 
-## License  <!-- ## License -->
+## License 
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.  <!-- This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details. -->
 
-## Contributing  <!-- ## Contributing -->
+## Contributing 
 
 Contributions are welcome! Feel free to submit issues or pull requests to enhance the functionality or fix bugs.  <!-- Contributions are welcome! Feel free to submit issues or pull requests to enhance the functionality or fix bugs. -->
 
-## Contact  <!-- ## Contact -->
+## Contact 
 
 For questions or support, please contact [Your Name or Email].  <!-- For questions or support, please contact [Your Name or Email]. -->
