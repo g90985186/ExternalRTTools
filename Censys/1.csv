@@ -1,0 +1,3 @@
+IP Address,Open Ports,Services
+81.30.19.122,"443, 500","HTTP, IKE"
+81.30.19.121,"161, 2000","SNMP, MIKROTIK_BW"
