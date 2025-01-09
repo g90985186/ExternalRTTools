@@ -43,11 +43,11 @@ Filtered CVEs: Displays CVEs related to the keyword, filtered for potential RCE 
 GitHub PoCs: Shows GitHub repositories with PoCs for the identified CVEs. ⭐
 Example output:
 
-`##############################################
-#                                            #
-#           CVE PoC Search Tool              #
-#       Find CVEs and GitHub PoCs            #
-#                                            #
+##############################################
+                                            
+           CVE PoC Search Tool              
+       Find CVEs and GitHub PoCs            
+                                            
 ##############################################
 
 Searching for CVEs on MITRE...
@@ -66,7 +66,6 @@ PoCs: No PoCs found
 CVE ID: CVE-2014-8580
 Description: Citrix NetScaler Application Delivery Controller allows remote access to network resources of other users.
 PoCs: No PoCs found
-`
 ### Notes
 Ensure your GitHub Personal Access Token has appropriate permissions to access the API (public repositories). ⭐
 This script currently uses only the MITRE CVE database. Support for the NVD can be added in the future. ⭐
