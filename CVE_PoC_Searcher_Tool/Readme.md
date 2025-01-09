@@ -23,19 +23,18 @@ CVE PoC Search Tool is a Python script designed to help cybersecurity profession
 
 Install the required libraries using pip:
 
-```sh
+
 pip install requests beautifulsoup4 ⭐
 ## Usage
 Running the Script
 To run the script, use the following command:
 
-sh
 python CVE_PoC_Search.py --keyword "<your_keyword>" --github_token "<your_github_token>" ⭐
 Arguments
 --keyword: The keyword to search for CVEs (e.g., apache tomcat). ⭐
 --github_token: Your GitHub Personal Access Token for API authentication. ⭐
 ## Example
-sh
+
 python CVE_PoC_Search.py --keyword "citrix netscaler" --github_token "ghp_your_personal_access_token" ⭐
 Output
 The script provides the following:

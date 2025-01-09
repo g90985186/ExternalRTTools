@@ -12,11 +12,11 @@ A Python script to search for leaked information associated with a given domain 
 2. **Dehashed API Key** <!-- Use '**' to bold "Dehashed API Key" -->
 
 ## Installation <!-- Use '##' for a secondary heading -->
-```
+
 git clone https://github.com/your-username/dehashed-domain-search.git <!-- Use triple backticks for code blocks -->
 cd dehashed-domain-search <!-- Use triple backticks for terminal commands -->
 pip install -r requirements.txt <!-- Regular text for shell commands -->
-Usage <!-- Use '##' for a secondary heading -->
+## Usage <!-- Use '##' for a secondary heading -->
 
 python dehashed_search.py --domain example.com <!-- Use triple backticks for code examples -->
 Parameters <!-- Use '###' for a tertiary heading -->
