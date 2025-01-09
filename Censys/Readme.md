@@ -1,58 +1,107 @@
-# Dehashed Domain Search Script <!-- Use '#' for the main title -->
+# Censys Open Ports Search Script
 
-A Python script to search for leaked information associated with a given domain using the Dehashed API. <!-- Regular text -->
+Censys Open Ports Search Script is a Python tool that queries the Censys Search API to retrieve information about open ports and associated services for a given IP address, IP range, or domain.
 
-## Features <!-- Use '##' for a secondary heading -->
-- Fetches breach data for domains in bulk. <!-- Use '-' for a bullet point -->
-- Outputs results to a CSV file for easy analysis. <!-- Regular text -->
-- Supports API rate-limiting to prevent overuse. <!-- Regular text -->
+## Features
 
-## Prerequisites <!-- Use '##' for a secondary heading -->
-1. **Python 3.x** <!-- Use '**' to bold "Python 3.x" -->
-2. **Dehashed API Key** <!-- Use '**' to bold "Dehashed API Key" -->
+- Flexible Target Input: Supports IP ranges, single IP addresses, and domains.
 
-## Installation <!-- Use '##' for a secondary heading -->
+- Aggregated Output: Groups open ports and their services by IP address.
 
-git clone https://github.com/your-username/dehashed-domain-search.git <!-- Use triple backticks for code blocks -->
-cd dehashed-domain-search <!-- Use triple backticks for terminal commands -->
-pip install -r requirements.txt <!-- Regular text for shell commands -->
-## Usage <!-- Use '##' for a secondary heading -->
+- CSV Export: Saves the results in a CSV file for easy analysis.
 
-python dehashed_search.py --domain example.com <!-- Use triple backticks for code examples -->
-Parameters <!-- Use '###' for a tertiary heading -->
---domain (required): The domain to search for leaks. <!-- Use '`' for inline code -->
---output (optional): File path to save results (default: results.csv). <!-- Use '`' for inline code -->
-## Example <!-- Use '##' for a secondary heading -->
+- Rate Limiting Compliance: Adheres to Censys API rate limits.
 
-python dehashed_search.py --domain example.com --output example_results.csv <!-- Use triple backticks for example code -->
-File Structure <!-- Use '##' for a secondary heading -->
+- Retry Logic: Handles rate limit errors (429) with automatic retries.
 
-dehashed-domain-search/ <!-- Use triple backticks for code block -->
-│
-├── dehashed_search.py         # The main script <!-- Use '#' for comments in the code -->
-├── requirements.txt           # List of dependencies <!-- Regular text -->
-└── README.md                  # This file <!-- Regular text -->
-API Configuration <!-- Use '##' for a secondary heading -->
-Create an account on Dehashed. <!-- Use regular text -->
-Obtain your API key from the dashboard. <!-- Regular text -->
-Add your API key to a .env file in the following format: <!-- Regular text -->
+## Prerequisites
 
-API_KEY=your_api_key_here <!-- Use triple backticks for plaintext examples -->
-Contributing <!-- Use '##' for a secondary heading -->
-## Contributions are welcome! <!-- Regular text -->
+- Dependencies
 
-Fork the repository. <!-- Use '-' for steps -->
-Create a new branch. <!-- Regular text -->
-Submit a pull request. <!-- Regular text -->
-## License <!-- Use '##' for a secondary heading -->
-This project is licensed under the MIT License - see the LICENSE file for details. <!-- Use brackets for hyperlinks -->
+- Python 3.7+
 
+- Required Python libraries:
 
+- requests
 
-Feel free to replace placeholders (e.g., `your-username`) with your specific details. This README is written in Markdown and should render correctly on GitHub. Let me know if you need additional modifications!
+- csv
 
+- colorama
 
+## Installation
 
+Install the required dependencies using pip:
 
+pip install requests colorama
 
+## Usage
 
+Command-Line Arguments
+
+Argument
+
+Description
+
+--api-id
+
+Your Censys API ID. Required.
+
+--api-secret
+
+Your Censys API Secret. Required.
+
+--target
+
+The IP range, IP address, or domain to search for open ports. Required.
+
+-o, --output
+
+(Optional) Path to save the results as a CSV file.
+
+## Examples
+
+Search for a Single IP Address
+
+python censys_search.py --api-id YOUR_API_ID --api-secret YOUR_API_SECRET --target 192.168.1.1
+
+Search for an IP Range and Save Results to CSV
+
+python censys_search.py --api-id YOUR_API_ID --api-secret YOUR_API_SECRET --target 192.168.0.0/24 --output results.csv
+
+Search for a Domain
+
+python censys_search.py --api-id YOUR_API_ID --api-secret YOUR_API_SECRET --target example.com
+
+Output Format
+
+Results will display open ports and their associated services in the format:
+
+IP - 80, 443, 22 - http, https, ssh
+
+When saved to a CSV file, it includes the following columns:
+
+IP Address: The queried IP address.
+
+Open Ports: Comma-separated list of open ports.
+
+Services: Comma-separated list of services associated with the open ports.
+
+Censys API Rate Limits
+
+Type
+
+Limit
+
+api:search
+
+0.4 actions/second (120 per 5 minutes)
+
+The script includes built-in delays and retries to comply with these limits.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contributing
+
+Contributions are welcome! Feel free to submit issues or pull requests to improve the script.
