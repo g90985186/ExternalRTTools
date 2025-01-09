@@ -50,19 +50,17 @@ Example output:
                                             
 ##############################################
 
-Searching for CVEs on MITRE...
-Found 5 tables. Debugging table content...
+Searching for CVEs on MITRE
+Found 5 tables. Debugging table content
 
-Table 3 is identified as the CVE table.
-Filtering CVEs for potential RCE vulnerabilities...
-
-Searching for PoCs on GitHub...
+Table 3 is identified as the CVE table
+Filtering CVEs for potential RCE vulnerabilities
+Searching for PoCs on GitHub
 Processing CVE: CVE-2020-8299
 Processing CVE: CVE-2014-8580
 CVE ID: CVE-2020-8299
 Description: Citrix ADC and Citrix/NetScaler Gateway 13.0 before 13.0-76.29, suffers from uncontrolled resource consumption.
 PoCs: No PoCs found
---------------------------------------------------
 CVE ID: CVE-2014-8580
 Description: Citrix NetScaler Application Delivery Controller allows remote access to network resources of other users.
 PoCs: No PoCs found
