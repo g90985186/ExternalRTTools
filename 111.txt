@@ -1,0 +1,61 @@
+AWS Access Keys
+
+Access Key ID: AKIAIOSFODNN7EXAMPLE
+Secret Access Key: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+Google Cloud Platform (GCP) API Keys
+
+API Key: AIzaSyD4rbD7wEXAMPLEAPIKey
+Azure Secrets
+
+Client ID: 8133457b-4ddf-4360-aa6d-5c2a864d1e37
+Tenant ID: d26a93f1-345e-4cd6-8e70-abcde1234567
+Secret Key: 2QJABTu96b16DA40dDLYpABC12345EXAMPLE
+GitHub Personal Access Tokens
+
+Token: ghp_1234567890abcdefghijklmnopqrstuvwxyEXAMPLE
+Stripe API Keys
+
+Publishable Key: pk_live_1234567890abcdefghijklmnop
+Secret Key: sk_live_1234567890abcdefghijklmnop
+Slack Tokens
+
+Bot Token: xoxb-1234567890-abcdefghijklmnop
+User Token: xoxp-1234567890-abcdefghijklmnop
+Twilio API Keys
+
+Key SID: SK1234567890abcdef1234567890abcdef
+Auth Token: 1234567890abcdef1234567890abcdef
+SendGrid API Keys
+
+API Key: SG.1234567890abcdefghijklmnopqrstuvwxy
+Dropbox API Keys
+
+API Key: sl.ABcdefGHIJKLMnoPQRsTuvWxyZEXAMPLE
+Facebook/Twitter/LinkedIn OAuth Tokens
+
+Example: EAACEdEose0cBAEXAMPLE
+Example: 1234567890abcdef1234567890abcdef
+Mailchimp API Keys
+
+API Key: 1234567890abcdef-us1
+Firebase Secrets
+
+API Key: AIzaSyEXAMPLEKey
+Database URL: https://your-database-name.firebaseio.com
+Heroku API Keys
+
+API Key: 12345678-1234-1234-1234-1234567890AB
+DigitalOcean API Keys
+
+Personal Access Token: dop_v1_1234567890abcdef1234567890abcdef
+Generic RSA Private Key
+
+vbnet
+Copy
+Edit
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEA7d3gEXAMPLEKEYNn7EXAMPLEKEXAMPLEKEY7ABCDEF123456
+-----END RSA PRIVATE KEY-----
+JWT Tokens
+
+Example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
