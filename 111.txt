@@ -1,14 +1,14 @@
-AWS Access Keys
-Access Key : AKIAIOSFODNN7EXAMPLE
-Secret Key: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
-Google Cloud Platform (GCP) API Keys
 
-API Key: AIzaSyD4rbD7wEXAMPLEAPIKey
+AWS Access Key : AKIAIOSFODNN7EXAMPLE
+AWS Secret Key: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+
+Google Cloud Platform (GCP) API Keys
+Google API Key: AIzaSyD4rbD7wEXAMPLEAPIKey
 Azure Secrets
 
-Client ID: 8133457b-4ddf-4360-aa6d-5c2a864d1e37
-Tenant ID: d26a93f1-345e-4cd6-8e70-abcde1234567
-Secret Key: 2QJABTu96b16DA40dDLYpABC12345EXAMPLE
+Azure Client ID: 8133457b-4ddf-4360-aa6d-5c2a864d1e37
+Azure Tenant ID: d26a93f1-345e-4cd6-8e70-abcde1234567
+Azure Secret Key: 2QJABTu96b16DA40dDLYpABC12345EXAMPLE
 GitHub Personal Access Tokens
 
 Token: ghp_1234567890abcdefghijklmnopqrstuvwxyEXAMPLE
