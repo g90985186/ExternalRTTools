@@ -1,7 +1,6 @@
 AWS Access Keys
-
-Access Key ID: AKIAIOSFODNN7EXAMPLE
-Secret Access Key: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+Access Key : AKIAIOSFODNN7EXAMPLE
+Secret Key: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 Google Cloud Platform (GCP) API Keys
 
 API Key: AIzaSyD4rbD7wEXAMPLEAPIKey
