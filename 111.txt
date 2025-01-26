@@ -17,8 +17,6 @@ Stripe API Keys
 Publishable Key: pk_live_1234567890abcdefghijklmnop
 Secret Key: sk_live_1234567890abcdefghijklmnop
 Slack Tokens
-aws_access_key = AKIAR4YEYRJLXPZPYBFL
-aws_secret_access = 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
 
 Bot Token: xoxb-1234567890-abcdefghijklmnop
 User Token: xoxp-1234567890-abcdefghijklmnop
