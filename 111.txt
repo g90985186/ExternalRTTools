@@ -20,6 +20,9 @@ SK1234567890abcdef1234567890abcdef
 sl.ABcdefGHIJKLMnoPQRsTuvWxyZEXAMPLE
 Token: ghp_1234567890abcdefghijklmnopqrstuvwxyEXAMPLE
 Stripe API Keys
+password: SuperSecretPassword1234567890!
+pass = "shortpass"
+pwd = #Abc123456789VeryLongPassword
 
 Publishable Key: pk_live_1234567890abcdefghijklmnop
 Secret Key: sk_live_1234567890abcdefghijklmnop
