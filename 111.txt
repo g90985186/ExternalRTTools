@@ -13,9 +13,9 @@ AZURE_CLIENT_ID: 8133457b-4ddf-4360-aa6d-5c2a864d1e37
 AZURE_TENANT_ID: d26a93f1-345e-4cd6-8e70-abcde1234567
 AZURE_CLIENT_SECRET : 2QJABTu96b16DA40dDLYpABC12345EXAMPLE
 GitHub Personal Access Tokens
-GitHub tokens: ghp_1234567890abcdefghijklmnopqrstuvwxy
-Twilio keys: SK1234567890abcdef1234567890abcdef
-Dropbox keys: sl.ABcdefGHIJKLMnoPQRsTuvWxyZEXAMPLE
+ghp_1234567890abcdefghijklmnopqrstuvwxy
+SK1234567890abcdef1234567890abcdef
+sl.ABcdefGHIJKLMnoPQRsTuvWxyZEXAMPLE
 Token: ghp_1234567890abcdefghijklmnopqrstuvwxyEXAMPLE
 Stripe API Keys
 
