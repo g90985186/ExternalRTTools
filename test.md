@@ -131,11 +131,11 @@
 
 - stripe
 
-#### Notes
+### Notes
 
-### Ensure Gitleaks is installed and accessible in your system's PATH.
+#### Ensure Gitleaks is installed and accessible in your system's PATH.
 
-### Use a GitHub personal access token with appropriate permissions to access the GitHub API.
+#### Use a GitHub personal access token with appropriate permissions to access the GitHub API.
 
 ## Contributing
 
