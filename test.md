@@ -1,6 +1,6 @@
-GitHubSearchTool
+# GitHubSearchTool
 
-Overview
+## Overview
 
 🔍 GitHubSearchTool is a Python-based command-line tool designed to simplify searching, downloading, and scanning GitHub repositories. The tool seamlessly integrates with Gitleaks to identify and validate secrets such as API keys, tokens, and credentials, enhancing your workflow and security posture.
 
@@ -27,8 +27,8 @@ Overview
 
 ## Installation
 ```bash
-- Step 1: Clone the Repository
-  - git clone <repository_url>
+* Step 1: Clone the Repository
+  * git clone <repository_url>
   - cd GitHubSearchTool
 
 - Step 2: Install Dependencies
@@ -41,6 +41,8 @@ Overview
 
 - The installation process will ensure that Gitleaks is installed if it is not already.
 ```
+
+```bash
 ## Usage
 
 * Basic Usage
@@ -50,7 +52,7 @@ Overview
 * <keyword>: The keyword to search for on GitHub.
 
 * <github_token>: Your GitHub personal access token.
-
+```
 ### Options
 
 - 📥 --download: Enable manual selection and download of repositories.
