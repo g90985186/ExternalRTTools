@@ -27,7 +27,8 @@
 
 ## Installation
 ### The tool can be installed using the Python Package Index (PyPI):
-#### - pip install RepoRecon
+- pip install RepoRecon
+### Install it via the source code:
 * Step 1: Clone the Repository:
   - git clone <repository_url>
   - cd GitHubSearchTool
@@ -45,14 +46,14 @@
 
 
 ## Usage
+
+### Basic Usage
 ```bash
-* Basic Usage
+githubsearchtool <keyword> --token <github_token>
 
-* githubsearchtool <keyword> --token <github_token>
+- <keyword>: The keyword to search for on GitHub.
 
-* <keyword>: The keyword to search for on GitHub.
-
-* <github_token>: Your GitHub personal access token.
+- <github_token>: Your GitHub personal access token.
 ```
 ### Options
 
