@@ -26,7 +26,6 @@
 - 🔍 Gitleaks installed on your system (Installation Guide)
 
 ## Installation
-```bash
 * Step 1: Clone the Repository *
 - git clone <repository_url>
   - cd GitHubSearchTool
@@ -40,7 +39,7 @@
   - python setup.py install
 
 - The installation process will ensure that Gitleaks is installed if it is not already.
-```
+
 
 
 ## Usage
