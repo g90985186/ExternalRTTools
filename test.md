@@ -27,8 +27,8 @@
 
 ## Installation
 ```bash
-- Step 1: Clone the Repository
-  * git clone <repository_url>
+*Step 1: Clone the Repository*
+- git clone <repository_url>
   - cd GitHubSearchTool
 
 - Step 2: Install Dependencies
