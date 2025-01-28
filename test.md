@@ -26,8 +26,10 @@
 - 🔍 Gitleaks installed on your system (Installation Guide)
 
 ## Installation
-* Step 1: Clone the Repository *
-- git clone <repository_url>
+### The tool can be installed using the Python Package Index (PyPI):
+#### - pip install RepoRecon
+* Step 1: Clone the Repository:
+  - git clone <repository_url>
   - cd GitHubSearchTool
 
 - Step 2: Install Dependencies
