@@ -1,8 +1,8 @@
-# GitHubSearchTool
+# RepoRecon
 
 ## Overview
 
-🔍 GitHubSearchTool is a Python-based command-line tool designed to simplify searching, downloading, and scanning GitHub repositories. The tool seamlessly integrates with Gitleaks to identify and validate secrets such as API keys, tokens, and credentials, enhancing your workflow and security posture.
+🔍 RepoRecon is a Python-based command-line tool designed to simplify searching, downloading, and scanning GitHub repositories. The tool seamlessly integrates with Gitleaks to identify and validate secrets such as API keys, tokens, and credentials, enhancing your workflow and security posture.
 
 ## Features
 
@@ -27,7 +27,7 @@
 
 ## Installation
 ```bash
-* Step 1: Clone the Repository
+- Step 1: Clone the Repository
   * git clone <repository_url>
   - cd GitHubSearchTool
 
