@@ -27,7 +27,7 @@
 
 ## Installation
 ```bash
-*Step 1: Clone the Repository*
+* Step 1: Clone the Repository *
 - git clone <repository_url>
   - cd GitHubSearchTool
 
@@ -42,9 +42,9 @@
 - The installation process will ensure that Gitleaks is installed if it is not already.
 ```
 
-```bash
-## Usage
 
+## Usage
+```bash
 * Basic Usage
 
 * githubsearchtool <keyword> --token <github_token>
