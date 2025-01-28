@@ -48,13 +48,13 @@
 ## Usage
 
 ### Basic Usage
-```bash
+
 githubsearchtool <keyword> --token <github_token>
 
 - <keyword>: The keyword to search for on GitHub.
 
 - <github_token>: Your GitHub personal access token.
-```
+
 ### Options
 
 - 📥 --download: Enable manual selection and download of repositories.
@@ -69,19 +69,18 @@ githubsearchtool <keyword> --token <github_token>
 
 ## Example Workflows
 
-* 1. Search and Display Results
+### 1. Search and Display Results
 
 - githubsearchtool "open source" --token <your_github_token>
 
 - This will display a list of repositories related to the keyword "open source."
 
-* 2. Download All Repositories
+### 2. Download All Repositories
 
 - githubsearchtool "open source" --token <your_github_token> --download-all
 
  - This will automatically download all matching repositories.
-
-* 3. Scan Repositories with Gitleaks
+### 3. Scan Repositories with Gitleaks
 
 - githubsearchtool "open source" --token <your_github_token> --download-all --gitleaks
 
