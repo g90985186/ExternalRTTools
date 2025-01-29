@@ -17,6 +17,7 @@
 
 - 🐍 **Python 3.8 or higher**
 - 🔍 **Gitleaks** installed on your system ([Installation Guide](https://github.com/zricethezav/gitleaks))
+- 🔍 **Git** installed on your system ([Installation Guide](https://git-scm.com/downloads))
 
 ## 📦 Installation
 
@@ -113,8 +114,9 @@ The following Python packages are required (listed in `requirements.txt`):
 
 ## 📢 Notes
 
-- Ensure **Gitleaks** is installed and accessible in your system's `PATH`.
+- Ensure **Gitleaks** and **git** are installed and accessible in your system's `PATH`.
 - Use a **GitHub personal access token** with appropriate permissions to access the GitHub API.
+- Make Sure that you are using the **rules.toml" file
 
 ## 🤝 Contributing
 
