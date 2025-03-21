@@ -4,8 +4,7 @@ AWS_SECRET_ACCESS_KEY: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 password = P@ssw0rd123!
 passwd: StrongKey
 pwd: SuperSecretKey
-AWS_ACCESS_KEY_ID : AKIAR4YEYRJLXPZPYBFL
-AWS_SECRET_ACCESS_KEY : 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
+
 
 Google Cloud Platform (GCP) API Keys
 Google API Key: AIzaSyD4rbD7wEXAMPLEAPIKey
